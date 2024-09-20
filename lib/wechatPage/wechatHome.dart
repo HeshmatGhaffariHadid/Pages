@@ -71,12 +71,17 @@ class WechatHome extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 50, vertical: 0.1),
-                      child: Text(
-                        'LOGIN',
-                        style: TextStyle(
-                            color: Colors.deepPurple,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.pushNamed(context, '/');
+                        },
+                        child: Text(
+                          'LOGIN',
+                          style: TextStyle(
+                              color: Colors.deepPurple,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                   ),

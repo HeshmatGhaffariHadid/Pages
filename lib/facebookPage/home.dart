@@ -42,13 +42,18 @@ class Home extends StatelessWidget {
                     color: Colors.blue.shade800,
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: const Center(
-                    child: Text(
-                      'Log in',
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
+                  child:  Center(
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.pushNamed(context, '/');
+                      },
+                      child: Text(
+                        'Log in',
+                        style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                 ),
