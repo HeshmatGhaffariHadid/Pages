@@ -11,11 +11,11 @@ void main() {
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
         routes: {
-          // '/' : (context) => NavigatorPage(),
+          '/' : (context) => NavigatorPage(),
           '/instagram' : (context) => Pages(),
           '/facebook' : (context) => Home(),
           '/wechat' : (context) => WechatHome(),
-          '/' : (context) => Profile()
+          '/profile' : (context) => Profile()
         },
 
       ),
@@ -39,11 +39,12 @@ class NavigatorPage extends StatelessWidget {
             CLickableContainer(note: 'Go to Facebook cloned page',rout: '/facebook',),
             const SizedBox(height: 20),
             CLickableContainer(note: 'Go to Wechat cloned page', rout: '/wechat',),
+            SizedBox(height: 20),
+            CLickableContainer(note: 'Go to Profile cloned page', rout: '/profile',),
             SizedBox(height: 80),
-            Text('Press login to come back',style: TextStyle(
+            Text('Note: Press login to come back',style: TextStyle(
               color: Colors.deepPurple.shade100,
               fontSize: 18,
-
             ),),
           ],
         ),

@@ -72,7 +72,7 @@ class WechatHome extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 50, vertical: 0.1),
                       child: GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           Navigator.pushNamed(context, '/');
                         },
                         child: Text(
@@ -100,9 +100,10 @@ class WechatHome extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 8.0, vertical: 0.1),
-                      child: Text('or',style: TextStyle(
-                        fontWeight: FontWeight.bold
-                      ),),
+                      child: Text(
+                        'or',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
                     SizedBox(
                       width: 80,
@@ -144,12 +145,11 @@ class WechatHome extends StatelessWidget {
                         child: Icon(Icons.g_mobiledata,
                             size: 50, color: Colors.orange)),
                     Container(
-
                       decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.5),
-                            spreadRadius:5,
+                            spreadRadius: 5,
                             blurRadius: 20,
                             offset: Offset(0, 3),
                           ),
@@ -168,16 +168,21 @@ class WechatHome extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Rigester now using ',style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.black38,
-                      fontWeight: FontWeight.bold
-                    ),),
-                    Text('Email',style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color:Colors.deepPurple,
-                    ),)
+                    Text(
+                      'Rigester now using ',
+                      style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.black38,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      'Email',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                      ),
+                    )
                   ],
                 )
               ],
