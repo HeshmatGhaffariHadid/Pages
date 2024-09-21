@@ -63,7 +63,7 @@ class WechatHome extends StatelessWidget {
                 SizedBox(height: 30),
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.deepPurple.shade100,
+                    color: Colors.deepPurple.shade200,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: TextButton(

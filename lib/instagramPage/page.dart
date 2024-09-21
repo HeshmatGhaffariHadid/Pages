@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pages/instagramPage/textFields.dart';
-
 import 'horizentalLines.dart';
-
 class Pages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -12,12 +10,17 @@ class Pages extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
             child: Column(
               children: [
-                const Row(
+                 Row(
                   children: [
-                    Icon(
-                      Icons.arrow_back_ios_new,
-                      color: Colors.black87,
-                      size: 26,
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.pushNamed(context, '/');
+                      },
+                      child: Icon(
+                        Icons.arrow_back_ios_new,
+                        color: Colors.black87,
+                        size: 26,
+                      ),
                     ),
                   ],
                 ),

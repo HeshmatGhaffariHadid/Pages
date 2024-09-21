@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pages/editProfile/profile.dart';
 import 'package:pages/facebookPage/home.dart';
 import 'package:pages/wechatPage/wechatHome.dart';
 import '../instagramPage/page.dart';
@@ -10,10 +11,11 @@ void main() {
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
         routes: {
-          '/' : (context) => NavigatorPage(),
+          // '/' : (context) => NavigatorPage(),
           '/instagram' : (context) => Pages(),
           '/facebook' : (context) => Home(),
           '/wechat' : (context) => WechatHome(),
+          '/' : (context) => Profile()
         },
 
       ),
@@ -37,6 +39,12 @@ class NavigatorPage extends StatelessWidget {
             CLickableContainer(note: 'Go to Facebook cloned page',rout: '/facebook',),
             const SizedBox(height: 20),
             CLickableContainer(note: 'Go to Wechat cloned page', rout: '/wechat',),
+            SizedBox(height: 80),
+            Text('Press login to come back',style: TextStyle(
+              color: Colors.deepPurple.shade100,
+              fontSize: 18,
+
+            ),),
           ],
         ),
       ),
